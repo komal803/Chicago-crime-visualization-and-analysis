@@ -56,3 +56,56 @@ plt.show()
 
 
 
+
+
+```python
+# Load the data and parse the "Date" column as datetime
+dataFrame = pd.read_csv("./chicago_crimes_2017.csv", parse_dates=["Date"])
+
+# Extract the month and year information
+dataFrame['Month'] = dataFrame['Date'].dt.strftime('%B')
+dataFrame['Year'] = dataFrame['Date'].dt.year
+
+# Aggregate the data by month
+monthly_crime_count = dataFrame.groupby('Month').size()
+
+# Plot the bar graph
+plt.figure(figsize=(10, 6))  # Adjust the figure size as needed
+monthly_crime_count.plot(kind='bar', rot=45)
+plt.xlabel('Month')
+plt.ylabel('Number of Crimes')
+plt.title('Distribution of Crimes Over Time (Monthly)')
+plt.show()
+```
+![png](output_21_1.png)
+
+
+
+
+
+```python
+# Set Seaborn dark grid style
+sns.set_style("darkgrid")
+
+# Count the frequency of each location description
+location_counts = dataFrame['Location Description'].value_counts()
+
+# Select the top 10 most frequent locations
+top_locations = location_counts.head(10)
+
+# Group the remaining locations into an "Other" category
+other_count = location_counts.iloc[10:].sum()
+top_locations['Other'] = other_count
+
+# Create a bar graph to visualize the distribution of crimes across different locations
+plt.figure(figsize=(10, 6))
+sns.barplot(x=top_locations.index, y=top_locations.values, palette="dark")
+plt.xlabel('Location Description')
+plt.ylabel('Frequency of Crimes')
+plt.title('Distribution of Crimes Across Different Locations')
+plt.xticks(rotation=60)  # Rotate x-axis labels for better readability
+plt.tight_layout()  # Adjust layout to prevent clipping of labels
+plt.show()
+
+```
+![png](output_22_1.png)
