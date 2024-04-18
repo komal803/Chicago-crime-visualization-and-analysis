@@ -36,3 +36,23 @@ plt.show()
 
     
 ![png](output_10_0.png)
+
+```python
+# Creating bar plot with a bigger size
+crosstb = pd.crosstab(dataFrame["Primary Type"], dataFrame["Arrest"])
+pl = crosstb.plot(kind="bar", stacked=True, rot=90, figsize=(12, 8))# Creating barplot
+# pl = crosstb.plot(kind="bar", stacked=True, rot=90)
+# Adding legend and adjusting its position
+pl.legend(title='CRIME TYPE ARREST', bbox_to_anchor=(1, 1.02), loc='upper left')
+plt.title('Arrest Counts by Crime Type')
+# Show the plot
+plt.show()
+```
+
+
+    
+![png](output_17_0.png)
+    
+
+
+
