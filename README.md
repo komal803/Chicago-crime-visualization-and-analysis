@@ -18,3 +18,21 @@ plt.show()
 
     
 ![png](output_9_1.png)
+```python
+
+# Set custom color palette
+custom_palette = "Set2"
+# Define custom color palette
+# custom_colors = ["#FF5733", "#33FF57", "#3366FF", "#FF33F3", "#33FFFF", "#FFFF33"]
+
+# Set figure size
+plt.figure(figsize=(12, 8))
+ax = sns.histplot(dataFrame, x="Date", hue="Primary Type")
+plt.title('Count of Crime vs Date')
+sns.move_legend(ax, "upper left", bbox_to_anchor=(1,1))
+plt.show()
+```
+
+
+    
+![png](output_10_0.png)
