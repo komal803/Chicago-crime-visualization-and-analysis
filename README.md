@@ -282,4 +282,23 @@ plt.show()
 
 
 
+![1](https://github.com/komal803/Chicago-crime-visualization-and-analysis/assets/166771554/dfd0137e-eeef-4ac0-9682-8a2009bc3f49)
+
+![2](https://github.com/komal803/Chicago-crime-visualization-and-analysis/assets/166771554/2eb2b661-de40-4a1f-8f29-98c38d4eb511)
+
+![4](https://github.com/komal803/Chicago-crime-visualization-and-analysis/assets/166771554/01906105-65c9-4ae7-bb11-5b251c222f20)
+
+
+
+![7](https://github.com/komal803/Chicago-crime-visualization-and-analysis/assets/166771554/cf3d8029-0f04-4933-aa70-91062bd1a956)
+
+
+
+
+![5](https://github.com/komal803/Chicago-crime-visualization-and-analysis/assets/166771554/5db335fe-2584-4d77-96fa-d880168c9f52)
+
+![6](https://github.com/komal803/Chicago-crime-visualization-and-analysis/assets/166771554/f56eec28-ec51-4ced-b5d1-b576a0eceb9f)
+
+
+
 
